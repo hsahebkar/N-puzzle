@@ -82,7 +82,11 @@ class Npuzzle:
 
 if __name__ == '__main__':
     try:
-        game = Npuzzle(size=(3, 3), randomize=1000)
+        rows = int(input("Number of row: "))
+        columns = int(input("Number of columns: "))
+        if rows < 2 or columns < 2:
+            raise ValueError("minimum number of row and columns is 2")
+        game = Npuzzle(size=(rows, columns), randomize=1000)
         game()
     except KeyboardInterrupt:
         exit(0)
