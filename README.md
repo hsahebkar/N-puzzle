@@ -7,8 +7,7 @@ A Python program to solve the N-puzzle problem using A* algorithms.
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Setup](#Setup)
 - [Algorithms](#algorithms)
 - [Contributing](#contributing)
 
@@ -17,7 +16,8 @@ A Python program to solve the N-puzzle problem using A* algorithms.
 The N-puzzle is a classic and fun Puzzle in computer science.
 This Python program provides a solver for the N-puzzle problem (Not in the Optimise Way).
 
-## Installation
+
+## Setup
 
 1. Clone this repository:
 
@@ -32,16 +32,19 @@ This Python program provides a solver for the N-puzzle problem (Not in the Optim
    pip install -r requirements.txt
    ```
 
-## Usage
+3. Run the Puzzle
 
-```bash
-python main.py
-```
+   ```bash
+   python main.py
+   ```
 
 ## Algorithms
 
 This program currently supports the following search algorithm (More coming soon):
-- A* Search
+1. A* Search
+   - Heuristic:<br> 
+      The `Heuristic` function calculates how far the current state of the board is from the goal state by measuring the total Manhattan distance of each element from its expected position. It also considers linear conflicts. The function returns a pair of values - one indicating if the board is solved, and the other is a heuristic score that guides the search algorithm to find efficient solutions.
+
 
 
 ## Contributing
